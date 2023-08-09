@@ -1,0 +1,222 @@
+.hero-inscricao-voluntario img {
+  width: 100%;
+}
+
+.content-voluntario {
+  width: 400px;
+  max-width: 100%;
+  font-size: 64px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-main);
+}
+
+.detalhes .d-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.detalhes {
+  padding: 60px 0;
+  position: relative;
+}
+
+.page-template-page-cadastro-empregador-php .detalhes:before {
+  top: 0;
+  content: '';
+  background-color: #fff !important;
+  width: 50vw;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.detalhes:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 50vw;
+  background: #66cc33;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.detalhes-empregar h2 {
+  color: #66cc33;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 50px;
+  margin: 0 0 30px 0;
+}
+
+.detalhes-empregar h3 {
+  color: var(--color-main);
+  font-size: 32px;
+  font-weight: 600;
+  margin: 20px 0;
+  line-height: 40px;
+}
+
+.detalhes-empregar p {
+  margin: 10px 0;
+  font-size: 20px;
+  line-height: 34px;
+  color: #5a5a5a;
+}
+
+.detalhes-empregar h4 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+
+.detalhes-empregar ul li {
+  padding: 0 0 20px 30px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  position: relative;
+}
+
+.detalhes-empregar ul li:before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  background-image: url(../img/iconstarwhite.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+}
+
+.detalhes-empregar p span {
+  font-size: 24px;
+  color: var(--color-main);
+  margin: 18px 0;
+  display: block;
+}
+
+.content-questionario {
+  background: var(--color-main);
+  text-align: center;
+  padding: 60px 0;
+}
+
+.content-questionario h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content-questionario h2:before {
+  content: '';
+  position: absolute;
+  left: -80px;
+  top: -20px;
+  width: 98px;
+  height: 93px;
+  background-image: url(../img/star3left.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.content-questionario h2:after {
+  content: '';
+  position: absolute;
+  right: -80px;
+  top: -20px;
+  width: 98px;
+  height: 93px;
+  background-image: url(../img/star3right.png);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .hero-inscricao-voluntario {
+    height: 344px;
+    align-items: flex-start;
+  }
+	
+.detalhes-empregar ul li:before {
+  left: 0 !important;
+}
+
+  .content-voluntario {
+    font-size: 30px;
+    margin: 50px 0 0 0;
+    max-width: 50%;
+    line-height: 33px;
+  }
+
+  .detalhes .d-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detalhes:after {
+    right: 0;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    z-index: -1;
+    top: unset;
+  }
+
+  .content-questionario {
+    display: block;
+	  padding: 40px 0;
+  }
+	
+	.content-questionario h2 {
+	font-size: 20px;
+	width: 100%;
+		
+  }
+	
+	.content-questionario h2:before {left: 20px;
+    top: -10px;
+    width: 40px;
+    height: 38px;}
+	
+	.content-questionario h2:after {right: 20px;
+    top: -10px;
+    width: 40px;
+    height: 38px;}
+
+  .detalhes-empregar h2 {
+    font-size: 31px;
+    text-transform: uppercase;
+  }
+
+  .detalhes-empregar p span {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .detalhes-empregar p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .detalhes-empregar h3 {
+    font-size: 31px;
+  }
+}
+
+.content-iframe {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.content-iframe iframe {
+  width: 600px;
+  max-width: 100%;
+}

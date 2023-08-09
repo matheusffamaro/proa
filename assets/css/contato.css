@@ -1,0 +1,343 @@
+/* Hero */
+
+.hero h1 {
+  font: bold 61px 'Neo Sans', sans-serif;
+  color: var(--color-light-blue);
+  text-transform: uppercase;
+}
+
+/* Form */
+
+.form-contact {
+  margin: 100px 0;
+}
+
+.form-contact .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.form-contact .col-one h2 {.faq-item h3
+  font: bold 40px 'Neo Sans', sans-serif;
+  color: var(--color-main);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.form-contact .col-one input,
+.form-contact .col-one textarea {
+  border-radius: 16px;
+  border: 1px solid var(--color-light-blue);
+  font: 400 20px 'Neo Sans', sans-serif;
+  color: #5a5a5a;
+  width: -webkit-fill-available;
+  margin: 15px 0;
+  outline: none;
+}
+
+.form-contact .col-one input::placeholder,
+.form-contact .col-one textarea::placeholder {
+  font: 400 20px 'Neo Sans', sans-serif;
+  color: #5a5a5a;
+}
+
+.form-contact .col-one button {
+  font: bold 16px 'Neo Sans', sans-serif;
+  color: #fff;
+  background-color: var(--color-light-blue);
+  border-radius: 20px;
+  border: none;
+  padding: 14px 60px;
+  margin: 20px 0 0 auto;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.form-contact .col-one button:hover {
+  background-color: var(--color-main);
+}
+
+.form-row.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* FAQ */
+.form-contact .col-two h2 {
+  font: bold 40px 'Neo Sans', sans-serif;
+  color: var(--color-pink);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-light-blue);
+  padding-bottom: 15px;
+  margin-top: 30px;
+}
+
+.faq-item h3 {
+  font: 400 20px 'Neo Sans', sans-serif;
+  color: var(--color-main);
+  line-height: 26px;
+  margin-bottom: 15px;
+  cursor: pointer;
+	padding-right: 30px;
+}
+
+.faq-item p {
+  font: 400 16px 'Neo Sans', sans-serif;
+  color: var(--color-main);
+  line-height: 26px;
+  display: none;
+}
+
+.faq-item.active p {
+  display: block;
+}
+
+.wpcf7-not-valid-tip {
+  display: none;
+}
+
+.wpcf7-not-valid {
+  border: 1px solid #dc3232;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+  text-align: center;
+  padding: 11px 0;
+  font-size: 14px;
+  margin: 0;
+  border: 1px solid #dc3232 !important;
+  font-family: 'Neo Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* MAP */
+
+.map {
+  margin-bottom: 50px;
+}
+
+/* Social */
+.social-contato h3 {
+  font: bold 32px 'Neo Sans', sans-serif;
+  color: var(--color-main);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.social-contato p {
+  font: 400 20px 'Neo Sans', sans-serif;
+  color: var(--color-main);
+  line-height: 30px;
+  margin-bottom: 7px;
+}
+
+.social-contato ul.icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.social-contato ul.icons li {
+  margin-right: 50px;
+}
+
+.social-contato ul.icons li:last-child {
+  margin-right: 0px;
+}
+
+.social-contato ul.icons a {
+  text-decoration: none;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 344px;
+  }
+
+  .hero h1 {
+    font: bold 24px 'Neo Sans', sans-serif;
+  }
+
+  .form-contact .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-contact .col-one h2 {
+    font: bold 24px 'Neo Sans', sans-serif;
+    text-align: center;
+  }
+
+  .form-row.grid-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-contact .col-one input,
+  .form-contact .col-one textarea {
+    font: 400 16px 'Neo Sans', sans-serif;
+  }
+
+  .form-contact .col-one input::placeholder,
+  .form-contact .col-one textarea::placeholder {
+    font: 400 16px 'Neo Sans', sans-serif;
+  }
+
+  .form-contact .col-one button {
+    margin: 0 auto;
+  }
+  .form-contact .col-two h2 {
+    font: bold 24px 'Neo Sans', sans-serif;
+    text-align: center;
+  }
+
+  .faq-item h3 {
+    font: 400 16px 'Neo Sans', sans-serif;
+  }
+
+  .faq-item p {
+    font: 400 14px 'Neo Sans', sans-serif;
+  }
+
+  .social-contato h3 {
+    font: bold 16px 'Neo Sans', sans-serif;
+    text-align: center;
+  }
+
+  .social-contato ul.icons {
+    justify-content: center;
+  }
+
+  .social-contato p {
+    font: 400 16px 'Neo Sans', sans-serif;
+  }
+
+  .map .social-contato {
+    text-align: center;
+  }
+
+  .map .col-one {
+    margin: 0 auto;
+  }
+
+  iframe {
+    height: 333px;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  section.map .grid {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+/* Extras */
+
+iframe {
+  height: 333px;
+}
+
+section.map .grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-id-141 header .nav {
+  background-color: #1c338000 !important;
+}
+
+.page-id-141 header.change .nav {
+  background: #1c3380 !important;
+  position: fixed;
+  top: 0;
+}
+
+.faq-item {
+  position: relative;
+}
+
+.faq-item svg {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.form-row.grid-row {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 10%;
+}
+
+.form-contact .grid {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 60px;
+}
+
+textarea#mensagem {
+  padding: 20px;
+}
+
+/* Fix mobile */
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .form-contact .grid {
+    display: grid;
+    grid-template-columns: 338px 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    background-image: url();
+    margin-top: -97px;
+  }
+
+  .form-contact {
+    margin: 60px 0;
+  }
+
+  .form-contact .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .form-contact .form-contato {
+    max-width: 305px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .form-contact .faq {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+
+/* Form */
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+  text-align: center;
+  padding: 11px 0;
+  font-size: 14px;
+  margin: 0;
+  border: 1px solid #dc3232 !important;
+  font-family: 'Neo Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 50px;
+}

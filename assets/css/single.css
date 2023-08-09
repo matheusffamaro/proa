@@ -1,0 +1,376 @@
+/*
+* Single Post - CSS
+* By: Monsi
+ */
+
+body {
+  font-family: sans-serif;
+  position: initial;
+}
+
+/* HERO */
+
+.hero .post__intro {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.hero .post__intro h1 {
+  font: bold 40px "Neo Sans", sans-serif;
+  color: var(--color-main);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.hero .post__intro p {
+  font: 400 20px "Neo Sans", sans-serif;
+  color: var(--color-main);
+  line-height: 31px;
+  margin-bottom: 15px;
+}
+
+.hero .post__intro strong {
+  font: bold 20px "Neo Sans", sans-serif;
+  color: var(--color-pink);
+  line-height: 31px;
+}
+
+.hero .post__intro span {
+  text-align: center;
+}
+
+/* Post Content */
+
+.post__content__wrapper {
+  margin-top: 60px;
+}
+
+.post__content__wrapper,
+.post__content__wrapper p {
+  font: 400 20px "Neo Sans", sans-serif;
+  line-height: 30px;
+  color: #5a5a5a;
+}
+
+.post__content__wrapper h3 {
+  font: 400 24px "Neo Sans", sans-serif;
+  line-height: 30px;
+  color: var(--color-light-blue);
+  margin: 60px 0 20px 0;
+  text-transform: uppercase;
+}
+.post__content__wrapper h3 b,
+.post__content__wrapper h3 strong {
+  font-weight: normal !important;
+}
+
+.post__content__wrapper h4 {
+  font: 400 24px "Neo Sans", sans-serif;
+  line-height: 34px;
+  color: var(--color-light-blue);
+  margin: 40px 0;
+}
+
+p#breadcrumbs {
+  text-align: left;
+  margin: 0 0 40px 0;
+  font-size: 16px;
+}
+
+p#breadcrumbs span span {
+  color: #00b8f2;
+}
+
+p#breadcrumbs span a {
+  color: #00b8f2;
+}
+
+/* Post Gallery */
+.post__gallery__wrapper {
+  margin-top: 100px;
+}
+
+.post__gallery__wrapper h3 {
+  font: bold 32px "Neo Sans", sans-serif;
+  line-height: 20px;
+  color: #ffcb00;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  border-bottom: 2px solid;
+}
+
+.post__gallery__items img {
+  width: 238px;
+  height: 238px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.post__gallery__items {
+  margin-top: 40px;
+}
+
+/* Others */
+
+.post__others {
+  margin: 60px 0;
+}
+
+/* Publicações */
+
+.post__others__wrapper h3 {
+  font: bold 32px "Neo Sans", sans-serif;
+  line-height: 20px;
+  color: var(--color-pink);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px 0 50px;
+}
+
+/* Posts */
+
+.post__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px 140px;
+}
+
+.post__item {
+  max-width: 290px;
+  width: 100%;
+  text-align: center;
+}
+
+.post__item img {
+  max-width: 80%;
+  height: 207px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.post__item span {
+  font: bold 16px "Neo Sans", sans-serif;
+  margin: 20px 0 14px 0;
+  color: var(--color-pink);
+  text-transform: uppercase;
+  display: block;
+}
+
+.post__item h2 {
+  font: 400 24px "Neo Sans", sans-serif;
+  color: var(--color-main);
+}
+
+.post__item p {
+  font: 400 16px "Neo Sans", sans-serif;
+  color: #5a5a5a;
+  margin-top: 10px;
+  line-height: 26px;
+}
+
+.post__item .post__tags p,
+.post__tags a {
+  color: var(--color-main);
+  font: bold 16px "Neo Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .hero .post__intro h1 {
+    font: bold 24px "Neo Sans", sans-serif;
+  }
+
+  .hero .post__intro p {
+    font: 400 16px "Neo Sans", sans-serif;
+    line-height: 2;
+  }
+
+  .hero .post__intro {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .hero .post__intro strong {
+    font: bold 16px "Neo Sans", sans-serif;
+  }
+
+  .post__content__wrapper h3 {
+    font: 400 20px "Neo Sans", sans-serif;
+  }
+
+  .post__content__wrapper,
+  .post__content__wrapper p {
+    font: 400 16px "Neo Sans", sans-serif;
+    line-height: 26px;
+  }
+
+  .post__content__wrapper h4 {
+    font: 400 20px "Neo Sans", sans-serif;
+    line-height: 30px;
+  }
+
+  .post__gallery__wrapper h3 {
+    font: bold 24px "Neo Sans", sans-serif;
+    text-align: center;
+  }
+
+  .post__others__wrapper h3 {
+    font: bold 24px "Neo Sans", sans-serif;
+    line-height: 20px;
+    color: var(--color-pink);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px 0 50px;
+  }
+
+  .post__wrapper {
+    gap: 50px 140px;
+  }
+
+  .post__gallery__items img {
+    width: 205px;
+    height: 205px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .post__item h2 {
+    font: 400 20px "Neo Sans", sans-serif;
+  }
+
+  .post__item p {
+    line-height: 26px;
+  }
+
+  .post__item img {
+    height: 149px;
+  }
+
+  .post__wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.post__image {
+  margin-top: 30px;
+}
+
+.post__image img {
+  max-width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+ul#menu-menu li a:hover {
+  color: #00b8f2;
+}
+
+.next2 {
+  position: absolute;
+  top: 49%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 100%;
+  right: -50px;
+}
+
+.next2:after {
+  content: " ";
+  background-image: url(../img/arrowright--yellow.svg);
+  transform: translate(-50%);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  background-size: cover;
+  cursor: pointer;
+  left: 13px;
+  top: 20px;
+}
+
+.prev2 {
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 100%;
+  left: -14px;
+}
+
+.prev2:after {
+  content: " ";
+  background-image: url(../img/arrowleft-yellow.svg);
+  left: 0;
+  top: 4px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 25px;
+}
+
+.header_post_gallery {
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  width: 102px;
+}
+
+.arrows > .prev2 {
+  right: 184px;
+  position: relative;
+  top: -6px;
+}
+
+.arrows > .next2 {
+  right: -58px;
+  position: relative;
+  top: -22px;
+}
+
+.post__content__wrapper h1 {
+  font-weight: 500;
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 35px;
+  margin-top: 30px;
+  color: var(--color-pink);
+}
+
+.post__content__wrapper h2 {
+  font-weight: 500;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 35px;
+  margin-top: 30px;
+  color: #1c3380;
+}
+
+.post__content__wrapper strong,
+.post__content__wrapper b {
+  font-weight: bold;
+}
+
+.post__content__wrapper a {
+  color: var(--color-pink);
+}
+
+.post__item img {
+  width: 278px;
+  height: 156px;
+  object-fit: cover;
+  border-radius: 30px;
+  max-width: 100%;
+}

@@ -1,0 +1,19 @@
+.hero-voluntario img {
+  width: 100%;
+  margin: 0;
+}
+
+.hero-voluntario h1 {
+  font-size: 65px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  width: 500px;
+  max-width: 100%;
+  line-height: 80px;
+}
+
+.form {
+  padding: 60px 0;
+  text-align: center;
+}

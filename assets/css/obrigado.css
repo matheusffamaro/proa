@@ -1,0 +1,82 @@
+.obrigado {
+  padding: 60px 0;
+  text-align: center;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+}
+
+.obrigado h1 {
+  font-weight: 600;
+  font-size: 50px;
+  color: #ff0099;
+  line-height: 60px;
+}
+
+.content-obrigado {
+  width: 800px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.page-template-page-obrigado header .nav {
+  background: #1c3380;
+}
+
+.obrigado p {
+  font-size: 24px;
+  color: #1c3380;
+  margin: 50px 0;
+}
+
+.content-obrigado:before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/obr1.png);
+  background-size: cover;
+  width: 152px;
+  height: 144px;
+  background-position: center;
+  right: 100%;
+  bottom: 75%;
+}
+
+.content-obrigado:after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/obr2.png);
+  background-size: cover;
+  background-position: center;
+  width: 152px;
+  height: 144px;
+  left: 100%;
+  bottom: 75%;
+}
+
+@media (max-width: 767px) {
+  .obrigado {
+    min-height: 380px;
+  }
+  .obrigado h1 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .obrigado p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .content-obrigado:before {
+    width: 76px;
+    height: 72px;
+    left: 0;
+    bottom: 100%;
+  }
+  .content-obrigado:after {
+    width: 76px;
+    height: 72px;
+    right: 0;
+    left: unset;
+    bottom: 100%;
+  }
+}
